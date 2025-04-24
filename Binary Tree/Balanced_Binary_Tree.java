@@ -14,6 +14,7 @@ class Solution {
         self.height = Math.max(left.height,right.height)+1;
         return self;
     }
+    
     class bal{
         boolean isbal = true;
         int height = -1;
