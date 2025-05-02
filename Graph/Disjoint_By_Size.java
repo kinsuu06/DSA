@@ -18,7 +18,6 @@ class DisjointSet {
         parent.set(node, ulp);
         return parent.get(node);
     }
-
     
 
     public void unionBySize(int u, int v) {
