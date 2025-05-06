@@ -4,6 +4,7 @@ class Solution {
         postorder(root,ll);
         return ll;
     }
+    
     public void postorder(TreeNode root, List<Integer> ll){
         if(root == null) return;
         postorder(root.left,ll);
