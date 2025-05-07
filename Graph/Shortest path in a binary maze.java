@@ -9,6 +9,7 @@ class Solution {
                 return o1.dis-o2.dis;
             }
         });
+
         boolean[][] visited = new boolean[n][n];
         
         int[] dr = {-1, 1, 0, 0, -1, 1, -1, 1};
