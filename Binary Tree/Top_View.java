@@ -21,6 +21,7 @@ class Solution {
                 q.add(new Tuple(node.right,c+1));
             }
         }
+        
         for(int i : map.values()){
             ans.add(i);
         }
