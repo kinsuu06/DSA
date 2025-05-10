@@ -33,7 +33,6 @@ class DisjointSet {
             rank.set(ulp_u, rankU + 1);
         }
     }
-
 }
 
 class Main {
