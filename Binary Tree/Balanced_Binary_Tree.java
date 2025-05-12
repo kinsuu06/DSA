@@ -6,6 +6,7 @@ class Solution {
         if(root == null){
             return new bal();
         }
+        
         bal left = func(root.left);
         bal right = func(root.right);
         boolean con = Math.abs(left.height-right.height) <= 1;
