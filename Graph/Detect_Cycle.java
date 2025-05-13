@@ -16,7 +16,7 @@ class Solution {
         Queue<int[]> q = new LinkedList<>();
         q.add(new int[]{s, -1});
         visited.add(s);
-
+        
         while (!q.isEmpty()) {
             int[] rv = q.poll();
             int node = rv[0];
