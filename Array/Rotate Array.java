@@ -5,6 +5,7 @@ class Solution {
         func(nums,0,k-1);
         func(nums, k, nums.length-1);
     }
+    
     public void func(int[] nums,int i, int j){
          while(i < j){
             int temp = nums[i];
