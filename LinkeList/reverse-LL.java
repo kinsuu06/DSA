@@ -21,4 +21,17 @@ class Solution {
         }
         return prev;
     }
+
+    // another method --> recursive
+
+    public static ListNode reverseLinkedList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode newHead = reverseLinkedList(head.next);
+        ListNode front = head.next;
+        front.next = head;
+        head.next = null;
+        return newHead;
+    }
 }
