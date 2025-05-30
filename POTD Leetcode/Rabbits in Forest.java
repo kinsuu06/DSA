@@ -13,8 +13,6 @@ public class Solution {
             int x = entry.getKey();    
             int count = entry.getValue(); 
             int groupSize = x + 1;
-            
-            
             int groups = (int) Math.ceil((double) count / groupSize);
             
             total += groups * groupSize;
