@@ -9,6 +9,7 @@
  *     }
  * }
  */
+
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode temp = head;
