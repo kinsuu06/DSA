@@ -1,12 +1,13 @@
 class Solution {
     public int rob(int[] nums) {
         int[] dp = new int[nums.length+1];
+        Arrays.fill(dp, -1);
         return dpSol(nums, 0, dp);
     }
     public int dpSol(int[] nums, int i, int[] dp){
-        dp[0] = dp[1] = 0;
+        dp[0] = dp[1] = -1;
         if(i >= nums.length) return 0;
-        if(dp[i] != 0) return dp[i];
+        if(dp[i] != -1) return dp[i];
         int rob = nums[i] + dpSol(nums, i+2, dp);
         int donotrob = dpSol(nums, i+1, dp);
         return dp[i] = Math.max(rob,donotrob);
