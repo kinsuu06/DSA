@@ -9,8 +9,9 @@ public class GCD_Decomposition {
             arr[i]=sc.nextInt();
             set.add(arr[i]);
         }
-        if(set.size()<2){
+        if(n<2){
             System.out.println("no");
+            return;
         }
         List<List<Integer>> adj =new ArrayList<>();
         List<Integer>num=new ArrayList<>(set);
